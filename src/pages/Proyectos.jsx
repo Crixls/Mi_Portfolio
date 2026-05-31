@@ -31,7 +31,7 @@ const Proyectos = () => {
 
       <section className="min-h-screen flex items-center justify-center bg-black ">
 
-      <div className="grid gap-15 md:m-20 lg:m-30 m-10 lg:grid-cols-3  md:grid-cols-2 md:mt-2 lg:mt-40 sm:grid-cols-1 ">
+      <div className="grid gap-15 md:m-20 lg:m-30 m-10 lg:grid-cols-2  md:grid-cols-2 md:mt-2 lg:mt-40 sm:grid-cols-1 ">
 
         {/* Tarjeta */}
 
