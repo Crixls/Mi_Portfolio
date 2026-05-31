@@ -65,7 +65,9 @@ const Proyectos = () => {
             ${darkMode ? "text-neutral-200" : "text-neutral-700"}
           `}
         >
-          Aplicación web interactiva que utiliza PokeAPI, permitiendo búsquedas rápidas, visualización de estadísticas en una interfaz amigable.
+        Plataforma de comercio electrónico con catálogo de productos, carrito de 
+        compra y flujo de pedido, enfocada en la experiencia de usuario y el desarrollo 
+        de una interfaz funcional, intuitiva y visualmente atractiva.        
         </p>
 
         <div
@@ -74,12 +76,12 @@ const Proyectos = () => {
             ${darkMode ? "text-neutral-300" : "text-neutral-600"}
           `}
         >
-          HTML5 · CSS3 · JavaScript
+          HTML5 · Tailwind CSS · React · PHP · Twig  
         </div>
 
         <div className="mt-auto flex justify-center items-center pt-6">
           <a
-            href="https://github.com/Crixls/PokeApi"
+            href="https://github.com/Crixls/E-commerce-platform-Full-Stack-Web-Application"
             target="_blank"
             rel="noopener noreferrer"
             className={`
@@ -130,8 +132,9 @@ const Proyectos = () => {
             ${darkMode ? "text-neutral-200" : "text-neutral-700"}
           `}
         >
-          Aplicación web del clima que utiliza la API de OpenWeather para mostrar información 
-          meteorológica en tiempo real de cualquier ciudad del mundo, incluyendo velocidad del viento, humedad y condiciones climatológicas actuales.
+          Portfolio personal desarrollado como proyecto de identidad digital, enfocado 
+          en la presentación de trabajos, habilidades en diseño UX/UI y desarrollo 
+          web mediante una interfaz sencilla e intuitiva.      
         </p>
 
         <div
@@ -140,12 +143,12 @@ const Proyectos = () => {
             ${darkMode ? "text-neutral-300" : "text-neutral-600"}
           `}
         >
-          HTML5 · CSS3 · JavaScript
+          HTML5 · Tailwind CSS · JavaScript · React
         </div>
 
         <div className="mt-auto flex justify-center items-center pt-6">
           <a
-            href="https://github.com/Crixls/gestionTiempo-2/"
+            href="https://github.com/Crixls/Mi_Portfolio"
             target="_blank"
             rel="noopener noreferrer"
             className={`
@@ -164,75 +167,7 @@ const Proyectos = () => {
         </div>
 
       </div>
-
-        {/* Tarjeta */}
-        
-        <div
-          className={`
-            backdrop-blur-xl border rounded-2xl p-8
-            flex flex-col h-full md:p-4 md:min-h-40 md:mt-10
-
-            transition-all duration-300 ease-out
-            ${hoverEffect}
-
-            ${darkMode
-              ? "bg-white/10 border-white/20 hover:inset-shadow-[0_0_20px_rgba(255,255,255,0.35)]"
-              : "bg-white border-black/10 hover:shadow-lg"
-            }
-          `}
-        >
-  
-        <h2
-          className={`
-            text-4xl font-light mb-2
-            ${darkMode ? "text-white" : "text-black"}
-          `}
-        >
-          Proyecto 03
-        </h2>
-
-        <p
-          className={`
-            mt-3 text-base leading-relaxed
-            ${darkMode ? "text-neutral-200" : "text-neutral-700"}
-          `}
-        >
-          Plataforma de gestión de sorteos y lotería donde los usuarios pueden comprar o canjear números, 
-          participar en rifas y consultar resultados. Incluye administración de sorteos, control de estados de números y registro de transacciones.
-        </p>
-
-        <div
-          className={`
-            mt-6 text-sm
-            ${darkMode ? "text-neutral-300" : "text-neutral-600"}
-          `}
-        >
-          PHP · Twig · JavaScript · CSS3 
-        </div>
-
-        <div className="mt-auto flex justify-center items-center pt-6">
-          <a
-            href="https://github.com/Crixls/ludopatia_descontrolada"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`
-              inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium
-              shadow-md active:scale-95 transition-all duration-200
-
-              ${darkMode
-                ? "bg-white text-black hover:bg-gray-200"
-                : "bg-black text-white hover:bg-gray-700"
-              }
-            `}
-          >
-            Ver
-            <LuExternalLink className="w-5 h-5" />
-          </a>
-        </div>
-
-      </div>
-
-        
+       
 
       </div>
 

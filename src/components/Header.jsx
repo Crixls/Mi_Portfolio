@@ -11,16 +11,13 @@ const Header = ({ darkMode, toggleTheme }) => {
   return (
     <header className="w-full lg:px-8 md:px-8 px-3 py-8 flex justify-between items-center bg-black">
 
-      {/* LOGO */}
       <Link to="/" className="lg:text-xl md:text-xl text-md font-bold text-white ">
         Cristina Luque Santaella
       </Link>
 
       <nav className="flex items-center">
 
-        {/* LINKS DESKTOP (ocultos en móvil) */}
         <ul className="hidden md:flex space-x-12 items-center">
-
           <li>
             <Link to="/sobremi" className="text-white">Sobre mí</Link>
           </li>
@@ -32,28 +29,38 @@ const Header = ({ darkMode, toggleTheme }) => {
           <li>
             <Link to="/contacto" className="text-white">Contacto</Link>
           </li>
-          <li className="flex items-center">
-              {/* BOTÓN TEMA (desktop/tablet si aplica) */}
-              {showThemeButton && (
-                <button onClick={toggleTheme}>
-                  {darkMode ? (
-                    <LuSun className="w-6 h-6 text-white" />
-                  ) : (
-                    <LuMoon className="w-6 h-6 text-white" />
-                  )}
-          </button>
-        )}
-          </li>
 
+          {showThemeButton && (
+            <li>
+              <button onClick={toggleTheme}>
+                {darkMode ? (
+                  <LuSun className="w-6 h-6 text-white" />
+                ) : (
+                  <LuMoon className="w-6 h-6 text-white" />
+                )}
+              </button>
+            </li>
+          )}
         </ul>
 
-        {/* HAMBURGUESA (solo móvil) */}
-        <div className="md:hidden ml-4 x-0">
-          <MenuHamburguesa/>
+        {/* HAMBURGUESA */}
+        <MenuHamburguesa />
+
+        <div className="md:hidden flex items-center gap-3 ml-4">
+          
+          {showThemeButton && (
+            <button onClick={toggleTheme}>
+              {darkMode ? (
+                <LuSun className="w-6 h-6 text-white" />
+              ) : (
+                <LuMoon className="w-6 h-6 text-white" />
+              )}
+            </button>
+          )}
+
+          
         </div>
 
-        
-      
       </nav>
 
     </header>
