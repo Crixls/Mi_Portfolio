@@ -21,3 +21,8 @@ Este es mi portfolio web donde muestro mis proyectos, habilidades y experiencia 
 ## 🎯 Objetivo
 
 El objetivo de este portfolio es mostrar mi evolución como desarrolladora y servir como espacio centralizado para mis proyectos y contacto profesional.
+
+## 💻 Ejecución
+
+- npm install
+- npm run dev
